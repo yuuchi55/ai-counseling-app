@@ -1,14 +1,9 @@
 {
   "version": 2,
-  "name": "ai-counseling-system",
   "builds": [
     {
       "src": "ai-counseling-app/package.json",
       "use": "@vercel/next"
-    },
-    {
-      "src": "backend/src/server.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -21,13 +16,6 @@
       "dest": "/ai-counseling-app/$1"
     }
   ],
-  "env": {
-    "NODE_ENV": "production",
-    "JWT_SECRET": "@jwt_secret",
-    "MONGODB_URI": "@mongodb_uri",
-    "ENCRYPTION_KEY": "@encryption_key",
-    "GEMINI_API_KEY": "@gemini_api_key"
-  },
   "build": {
     "env": {
       "NODE_ENV": "production"
