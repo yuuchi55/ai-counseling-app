@@ -46,7 +46,7 @@ const Dashboard = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl p-6 text-white">
-              <h3 className="text-xl font-semibold mb-2">プロフィール</hostile_content_threshold>
+              <h3 className="text-xl font-semibold mb-2">プロフィール</h3>
               <p className="opacity-90">アカウント情報の確認と編集</p>
             </div>
             
