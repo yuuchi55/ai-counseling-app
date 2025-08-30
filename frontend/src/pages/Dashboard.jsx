@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import useAuthStore from '../stores/authStore'
 import toast from 'react-hot-toast'
+import BackButton from '../components/common/BackButton'
 
 const Dashboard = () => {
   const navigate = useNavigate()
@@ -14,11 +15,12 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50">
-      <nav className="bg-white shadow-lg">
+    <div className="dashboard-container bg-gradient-to-br from-purple-50 to-blue-50">
+      <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            <div className="flex items-center">
+            <div className="flex items-center space-x-4">
+              <BackButton text="前へ" />
               <h1 className="text-xl font-bold text-gray-800">AIカウンセリング</h1>
             </div>
             <div className="flex items-center space-x-4">
@@ -36,7 +38,7 @@ const Dashboard = () => {
         </div>
       </nav>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-20">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             ダッシュボード
@@ -59,7 +61,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="mt-8 p-6 bg-gray-50 rounded-xl">
+          <div className="mt-8 p-6 bg-gray-50 rounded-xl mb-8">
             <h3 className="text-lg font-semibold text-gray-800 mb-4">
               ユーザー情報
             </h3>

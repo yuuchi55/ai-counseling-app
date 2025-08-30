@@ -123,3 +123,4 @@ bower_components
 .tern-port
 .vscode-test
 .yarn-integrity
+.vercel
